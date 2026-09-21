@@ -245,6 +245,7 @@ async def get_entities_triplets(
         "all_ranks": all_ranks,
         "qualifiers": qualifiers,
         "lang": lang,
+        "fallback_lang": "any",
         "format": "triplet",
     }
     response = SESSION.get(
@@ -297,6 +298,7 @@ async def get_triplet_values(
         "references": references,
         "qualifiers": qualifiers,
         "lang": lang,
+        "fallback_lang": "any",
         "pid": ",".join(pid),
         "format": "json",
     }
